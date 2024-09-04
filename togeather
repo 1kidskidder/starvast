@@ -1,2 +1,1 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/espv2",true))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/esp",true))()
