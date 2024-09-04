@@ -12,7 +12,7 @@ local Team_Check = {
     Green = Color3.fromRGB(167, 199, 231),
     Red = Color3.fromRGB(255, 0, 0)
 }
-local TeamColor = true
+local TeamColor = false
 
 --// SEPARATION
 local player = game:GetService("Players").LocalPlayer
@@ -57,7 +57,7 @@ local function ToColor3(col) --Function to convert, just cuz c;
     return Color3.new(r,g,b); --Color3 datatype, made of the RGB inputs
 end
 
-local black = Color3.fromRGB(0, 0 ,0)
+local black = Color3.fromRGB(135, 206, 235)
 local function ESP(plr)
     local library = {
         --//Tracer and Black Tracer(black border)
