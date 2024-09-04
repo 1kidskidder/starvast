@@ -1,6 +1,6 @@
 local Settings = {
     Box_Color = Color3.fromRGB(240, 255, 255),
-    Tracer_Color = Color3.fromRGB(255, 0, 0),
+    Tracer_Color = Color3.fromRGB(167, 199, 231),
     Tracer_Thickness = 1,
     Box_Thickness = 1,
     Tracer_Origin = "Bottom", -- Middle or Bottom if FollowMouse is on this won't matter...
