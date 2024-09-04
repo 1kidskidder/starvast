@@ -24,10 +24,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/v4/main/r
     print("Resolver Added")
 end)
 
-Switch.CreateToggle("Box", function(state)
-	if state then
-		print("Toggled!")
-	elseif state == false then
-		print("Disabled :(")
-	end
+local switch1 = tab1.new("switch", {
+    text = "Boxesp";
+})
+switch1.set(false)
+switch1.event:Connect(function(bool)
+    print("switch set to: ", bool)
 end)
