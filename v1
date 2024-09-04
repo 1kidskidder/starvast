@@ -28,6 +28,6 @@ local switch1 = tab1.new("switch", {
     text = "Boxesp";
 })
 switch1.set(false)
-switch1.event:Connect(function(bool)
+switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/espv2",true))()
     print("switch set to: ", bool)
 end)
