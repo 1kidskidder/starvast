@@ -30,7 +30,6 @@ local switch1 = tab1.new("switch", {
 switch1.set(false)
 switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/togeather",false))()
     print("switch set to: ", bool)
-})
 switch1.set(true)
 switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/togeather",true))()
     print("switch set to: ", bool)
