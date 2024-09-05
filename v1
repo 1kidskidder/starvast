@@ -31,3 +31,19 @@ switch1.set(false)
 switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/espv2",true))()
     print("switch set to: ", bool)
 end)
+
+local button1 = tab1.new("button", {
+    text = "Adonis",
+})
+button1.event:Connect(function()loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Adonis-Anticheat-Bypass-11111"))() 
+    print("Adonis bypassed")
+end)
+
+local tab1 = window1.new({
+    text = "Aimbot",
+})
+
+local label1 = tab1.new("label", {
+    text = "Features",
+    color = Color3.new(1, 0, 0),
+})
