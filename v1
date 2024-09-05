@@ -43,14 +43,14 @@ local tab2 = window1.new({
     text = "Aimbot",
 })
 
-local label1 = tab2.new("label", {
+local label2 = tab2.new("label", {
     text = "Features",
     color = Color3.new(1, 0, 0),
 })
 
-local button1 = tab2.new("button", {
+local button2 = tab2.new("button", {
     text = "camlock",
 })
-button1.event:Connect(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/starvastcam",true))() 
+button2.event:Connect(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/starvastcam",true))() 
     print("Camlockactivated")
 end)
