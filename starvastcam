@@ -36,7 +36,7 @@ function FindNearestEnemy()
                 if IsVisibleOnViewport then
                     local Distance = (CenterPosition - Vector2.new(Position.X, Position.Y)).Magnitude
                     if Distance < ClosestDistance then
-                        ClosestPlayer = Character.HumanoidRootPart
+                        ClosestPlayer = Character.Head
                         ClosestDistance = Distance
                     end
                 end
@@ -48,7 +48,7 @@ function FindNearestEnemy()
 end
 
 local enemy = nil
--- Function to aim the camera at the nearest enemy's HumanoidRootPart
+-- Function to aim the camera at the nearest enemy's Head
 RunService.Heartbeat:Connect(
     function()
         if CamlockState == true then
