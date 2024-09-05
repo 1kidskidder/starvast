@@ -49,8 +49,8 @@ local label1 = tab1.new("label", {
 })
 
 local button1 = tab1.new("button", {
-    text = "camlock",
+    text = "camlock and silent",
 })
-button1.event:Connect(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/starvastcam",true))() 
+button1.event:Connect(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/functionals",true))()
     print("Camlockactivated")
 end)
