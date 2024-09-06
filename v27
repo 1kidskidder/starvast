@@ -8,7 +8,7 @@ local window1 = engine.new({
 window1.open()
 
 local tab1 = window1.new({
-    text = "Visuals and Fearures",
+    text = "EspnStuff",
 })
 
 local label1 = tab1.new("label", {
@@ -26,7 +26,7 @@ end)
 local switch1 = tab1.new("switch", {
     text = "Boxesp";
 })
-switch1.set(true)
+switch1.set(false)
 switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/espv2"))()
     print("switch set to: ", bool)
 end)
