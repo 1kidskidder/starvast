@@ -1,0 +1,32 @@
+local engine = loadstring(game:HttpGet("https://raw.githubusercontent.com/Singularity5490/rbimgui-2/main/rbimgui-2.lua"))()
+
+local window1 = engine.new({
+    text = "Starvast",
+    size = UDim2.new(207, 159, 255),
+})
+
+window1.open()
+
+local tab1 = window1.new({
+    text = "Visuals and Fearures",
+})
+
+local label1 = tab1.new("label", {
+    text = "Features and Visuals",
+    color = Color3.new(1, 0, 0),
+})
+
+local button1 = tab1.new("button", {
+    text = "Resolver",
+})
+button1.event:Connect(function()loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/v4/main/resolver",true))()
+  print("Resolve theese faggs")
+end)
+
+local switch1 = tab1.new("switch", {
+    text = "Boxesp";
+})
+switch1.set(true)
+switch1.event:Connect(function(bool)loadstring(game:HttpGet("https://raw.githubusercontent.com/1kidskidder/starvast/main/espv2"))()
+    print("switch set to: ", bool)
+end)
