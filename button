@@ -66,7 +66,7 @@ Mouse.KeyDown:Connect(function(k)
             Locked = not Locked	
             if Locked then	
                 enemy = FindNearestEnemy()
-                CamlockState = true
+                CamlockState = false
              else	
                 if enemy ~= nil then	
                     enemy = nil	
@@ -126,21 +126,21 @@ TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.0792079195, 0, 0.18571429, 0)
 TextButton.Size = UDim2.new(0, 170, 0, 44)
 TextButton.Font = Enum.Font.SourceSansSemibold
-TextButton.Text = "sinxware"
+TextButton.Text = "Aimlock"
 TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 18.000
 TextButton.TextWrapped = true
-local state = true
+local state = false
 TextButton.MouseButton1Click:Connect(
     function()
         state = not state
         if not state then
-            TextButton.Text = "sinxware ON"
-            CamlockState = true
+            TextButton.Text = "Aimlock on"
+            CamlockState = false
             enemy = FindNearestEnemy()
         else
-            TextButton.Text = "sinxware OFF"
+            TextButton.Text = "Aimlock Off"
             CamlockState = false
             enemy = nil
         end
