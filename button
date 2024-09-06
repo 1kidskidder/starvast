@@ -13,7 +13,7 @@ local Players = game:GetService("Players")
 local LP = Players.LocalPlayer	
 local Mouse = LP:GetMouse()	
 
-local Locked = false
+local Locked = true
 
 getgenv().Key = "q"
 
@@ -66,7 +66,7 @@ Mouse.KeyDown:Connect(function(k)
             Locked = not Locked	
             if Locked then	
                 enemy = FindNearestEnemy()
-                CamlockState = false
+                CamlockState = true
              else	
                 if enemy ~= nil then	
                     enemy = nil	
@@ -85,7 +85,7 @@ local UICorner_2 = Instance.new("UICorner")
 
 --Properties:
 
-Hellbound.Name = "Aimlock"
+Hellbound.Name = "Hellbound"
 Hellbound.Parent = game.CoreGui
 Hellbound.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -115,32 +115,32 @@ Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0.326732665, 0, 0, 0)
 Logo.Size = UDim2.new(0, 70, 0, 70)
-Logo.Image = "rbxassetid://14939268676"
+Logo.Image = "rbxassetid://830610397"
 Logo.ImageTransparency = 0.300
 
 TextButton.Parent = Frame
-TextButton.BackgroundColor3 = Color3.fromRGB(101, 55, 229)
+TextButton.BackgroundColor3 = Color3.fromRGB(75, 80, 255)
 TextButton.BackgroundTransparency = 5.000
 TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.BorderSizePixel = 0
 TextButton.Position = UDim2.new(0.0792079195, 0, 0.18571429, 0)
 TextButton.Size = UDim2.new(0, 170, 0, 44)
 TextButton.Font = Enum.Font.SourceSansSemibold
-TextButton.Text = "Aimlock"
-TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.Text = "Toggle Aimlock"
+TextButton.TextColor3 = Color3.fromRGB(180, 180, 255)
 TextButton.TextScaled = true
 TextButton.TextSize = 18.000
 TextButton.TextWrapped = true
-local state = false
+local state = true
 TextButton.MouseButton1Click:Connect(
     function()
         state = not state
         if not state then
-            TextButton.Text = "Aimlock on"
+            TextButton.Text = "aimlock ON"
             CamlockState = false
             enemy = FindNearestEnemy()
         else
-            TextButton.Text = "Aimlock Off"
+            TextButton.Text = "aimlock OFF"
             CamlockState = false
             enemy = nil
         end
