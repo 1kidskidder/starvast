@@ -1,11 +1,11 @@
 local Settings = {
-    Box_Color = Color3.fromRGB(255, 255, 255),
+    Box_Color = Color3.fromRGB(72, 50, 72),
     Tracer_Color = Color3.fromRGB(255, 255, 255),
     Tracer_Thickness = 0.5,
-    Box_Thickness = 0.5,
+    Box_Thickness = 0.2,
     Tracer_Origin = "Bottom", -- Middle or Bottom if FollowMouse is on this won't matter...
     Tracer_FollowMouse = false,
-    Tracers = true
+    Tracers = false
 }
 local Team_Check = {
     TeamCheck = false, -- if TeamColor is on this won't matter...
@@ -35,7 +35,7 @@ end
 
 local function NewLine(thickness, color)
     local line = Drawing.new("Line")
-    line.Visible = true
+    line.Visible = false
     line.From = Vector2.new(0, 0)
     line.To = Vector2.new(0, 0)
     line.Color = color 
@@ -57,7 +57,7 @@ local function ToColor3(col) --Function to convert, just cuz c;
     return Color3.new(r,g,b); --Color3 datatype, made of the RGB inputs
 end
 
-local black = Color3.fromRGB(0, 0, 0)
+local black = Color3.fromRGB(72, 50, 72)
 local function ESP(plr)
     local library = {
         --//Tracer and Black Tracer(black border)
